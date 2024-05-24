@@ -30,6 +30,6 @@ A brief description of your project. What technologies did you use? What was the
 ## Connect with Me
 
 - [LinkedIn](https://www.linkedin.com/in/brunomaximilianoquiroga/)
-- [Personal Website](bruquiro.github.io)
+- [Personal Website](https://www.bruquiro.github.io/)
 
 ---
