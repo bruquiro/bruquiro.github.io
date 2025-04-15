@@ -1,6 +1,6 @@
 # Bruno Quiroga
 
-**Data Analyst | Full Stack Developer | Systems Engineering Student**
+**Data Analyst** | **Full Stack Developer** | **Systems Engineering Student**
 
 📍 Rosario, Argentina  
 📧 [brunomquiroga0@gmail.com](mailto:brunomquiroga0@gmail.com)  
