@@ -4,7 +4,6 @@
 
 📧 [brunomquiroga0@gmail.com](mailto:brunomquiroga0@gmail.com)  
 📍 Rosario, Argentina  
-📱 +54 9 336 402-1727  
 🔗 [LinkedIn](https://linkedin.com/in/brunomaximilianoquiroga)
 
 ---
