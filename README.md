@@ -1,4 +1,4 @@
-# Bruno Quiroga
+# [Bruno Quiroga](https://bruquiro.github.io/)
 
 **Data Analyst** | **Full Stack Developer** | **Systems Engineering Student**
 
