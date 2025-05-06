@@ -3,6 +3,15 @@ layout: default
 title: Bruno Quiroga
 ---
 
+<div class="nav">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#languages">Languages</a>
+</div>
+
 # [Bruno Quiroga](https://bruquiro.github.io/)
 
 **Data Analyst** | **Full Stack Developer** | **Systems Engineering Student**
@@ -13,13 +22,13 @@ title: Bruno Quiroga
 
 ---
 
-## About Me
+## <div id="about">About Me</div>
 
 I’m passionate about technology and solving real-world problems through data and software. Currently working on data analysis and application management, while pursuing a Systems Engineering degree at UTN (FRRo). I enjoy learning new tools, collaborating in teams, and delivering impactful solutions.
 
 ---
 
-## Work Experience
+## <div id="experience">Work Experience</div>
 
 ### Malevo App  
 **Systems & IT** | *Aug 2024 – Present*  
@@ -42,7 +51,7 @@ I’m passionate about technology and solving real-world problems through data a
 
 ---
 
-## Projects
+## <div id="projects">Projects</div>
 
 **Python Project – ITBA (2020)**  
 Comparative financial analysis of different companies using:  
@@ -50,7 +59,7 @@ Python (Pandas, NumPy, Matplotlib, Seaborn), SQL, Excel, PowerBI.
 
 ---
 
-## Education
+## <div id="education">Education</div>
 
 **Systems Engineering** – UTN FRRo  
 *Mar 2021 – Present*
@@ -60,7 +69,7 @@ Python (Pandas, NumPy, Matplotlib, Seaborn), SQL, Excel, PowerBI.
 
 ---
 
-## Skills
+## <div id="skills">Skills</div>
 
 **Languages & Frameworks:**  
 Python, SQL, NodeJS, Java, Django, React, AngularJS, C
@@ -68,21 +77,21 @@ Python, SQL, NodeJS, Java, Django, React, AngularJS, C
 **Tools & Platforms:**  
 Git/GitHub, Linux, Excel, PowerBI
 
+<div class="badges">
+  <img src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54" class="badge">
+  <img src="https://img.shields.io/badge/SQL-000?style=flat-square&logo=mysql&logoColor=white" class="badge">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" class="badge">
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" class="badge">
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" class="badge">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" class="badge">
+  <img src="https://img.shields.io/badge/PowerBI-F2C811?style=flat-square&logo=powerbi&logoColor=black" class="badge">
+</div>
+
 ---
 
-## Languages
+## <div id="languages">Languages</div>
 
 - Spanish (Native)  
 - English (Professional Working Proficiency)
 
----
-
-## Tech Stack Badges
-
-![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
-![SQL](https://img.shields.io/badge/SQL-000?style=flat-square&logo=mysql&logoColor=white)
-![NodeJS](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![PowerBI](https://img.shields.io/badge/PowerBI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+<a href="#" class="top-button">↑ Back to Top</a>
