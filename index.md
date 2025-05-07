@@ -12,7 +12,7 @@ title: Bruno Quiroga
   <a href="#languages">Languages</a>
 </div>
 
-# [Bruno Quiroga](https://bruquiro.github.io/)
+# Bruno Quiroga
 
 **Data Analyst** | **Full Stack Developer** | **Systems Engineering Student**
 
@@ -22,14 +22,17 @@ title: Bruno Quiroga
 
 ---
 
-## <div id="about">About Me</div>
+## About Me {#about}
 
+<div data-aos="fade-up">
 I’m passionate about technology and solving real-world problems through data and software. Currently working on data analysis and application management, while pursuing a Systems Engineering degree at UTN (FRRo). I enjoy learning new tools, collaborating in teams, and delivering impactful solutions.
+</div>
 
 ---
 
-## <div id="experience">Work Experience</div>
+## Work Experience {#experience}
 
+<div data-aos="fade-up">
 ### Malevo App  
 **Systems & IT** | *Aug 2024 – Present*  
 - Manage and test app releases and features.  
@@ -48,29 +51,35 @@ I’m passionate about technology and solving real-world problems through data a
 - Upload and process invoices.  
 - Improve administrative workflows.  
 - Event contracting agency.
+</div>
 
 ---
 
-## <div id="projects">Projects</div>
+## Projects {#projects}
 
+<div data-aos="fade-up">
 **Python Project – ITBA (2020)**  
 Comparative financial analysis of different companies using:  
 Python (Pandas, NumPy, Matplotlib, Seaborn), SQL, Excel, PowerBI.
+</div>
 
 ---
 
-## <div id="education">Education</div>
+## Education {#education}
 
+<div data-aos="fade-up">
 **Systems Engineering** – UTN FRRo  
 *Mar 2021 – Present*
 
 **Electronics Technician** – E.E.S.T. Nº 6, Siderurgia Argentina  
 *2013 – 2018*
+</div>
 
 ---
 
-## <div id="skills">Skills</div>
+## Skills {#skills}
 
+<div data-aos="fade-up">
 **Languages & Frameworks:**  
 Python, SQL, NodeJS, Java, Django, React, AngularJS, C
 
@@ -86,12 +95,15 @@ Git/GitHub, Linux, Excel, PowerBI
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" class="badge">
   <img src="https://img.shields.io/badge/PowerBI-F2C811?style=flat-square&logo=powerbi&logoColor=black" class="badge">
 </div>
+</div>
 
 ---
 
-## <div id="languages">Languages</div>
+## Languages {#languages}
 
+<div data-aos="fade-up">
 - Spanish (Native)  
 - English (Professional Working Proficiency)
+</div>
 
 <a href="#" class="top-button">↑ Back to Top</a>
