@@ -5,23 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bruno Quiroga</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- SEO & Open Graph -->
+    <meta
+      name="description"
+      content="Bruno Quiroga - Data Analyst, Full Stack Developer, Systems Engineering Student. Portfolio, skills, and experience."
+    />
+    <meta
+      name="keywords"
+      content="Bruno Quiroga, Data Analyst, Full Stack Developer, Portfolio, Rosario, Argentina, Python, React, SQL, UTN"
+    />
+    <meta property="og:title" content="Bruno Quiroga Portfolio" />
+    <meta
+      property="og:description"
+      content="Portfolio de Bruno Quiroga: Data Analyst, Full Stack Developer, estudiante de Ingeniería en Sistemas."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bruquiro.github.io/" />
+    <meta property="og:image" content="favicon.ico" />
+    <!-- Favicons y manifest para compatibilidad total -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
     <canvas id="matrix"></canvas>
 
-    <div class="content">
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#work">Work Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#languages">Languages</a></li>
-          <li><a href="#tech-stack-badges">Stack</a></li>
-        </ul>
-      </nav>
+    <!-- Botón de modo claro/oscuro fuera del nav, solo visible en móvil -->
+    <button
+      id="toggle-theme-mobile"
+      aria-label="Toggle dark/light mode"
+      style="display: none"
+    >
+      🌙
+    </button>
+    <!-- Botón hamburguesa fuera del nav, solo visible en móvil -->
+    <button
+      id="menu-toggle"
+      aria-label="Open menu"
+      class="menu-toggle"
+      style="left: 16px; right: auto"
+    >
+      ☰
+    </button>
 
+    <nav>
+      <ul id="nav-list">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">Work Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#tech-stack-badges">Stack</a></li>
+        <li>
+          <button id="toggle-theme" aria-label="Toggle dark/light mode">
+            🌙
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
       <h1 id="top"><a href="https://bruquiro.github.io/">Bruno Quiroga</a></h1>
       <p>
         <strong>Data Analyst</strong> | <strong>Full Stack Developer</strong> |
