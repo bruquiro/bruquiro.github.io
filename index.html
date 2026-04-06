@@ -3,26 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bruno Quiroga</title>
+    <title>bruquiro | Software Engineer & Data Analyst</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Symbols -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    />
     <!-- SEO & Open Graph -->
     <meta
       name="description"
-      content="Bruno Quiroga - Data Analyst, Full Stack Developer, Systems Engineering Student. Portfolio, skills, and experience."
+      content="Bruno Quiroga - Software Engineer & Data Analyst. Systems Engineering student."
     />
     <meta
       name="keywords"
-      content="Bruno Quiroga, Data Analyst, Full Stack Developer, Portfolio, Rosario, Argentina, Python, React, SQL, UTN"
+      content="Bruno Quiroga, Software Engineer, Data Analyst, Full Stack Developer, Python, React, SQL, Rosario, Argentina"
     />
-    <meta property="og:title" content="Bruno Quiroga Portfolio" />
+    <meta property="og:title" content="bruquiro | Software Engineer & Data Analyst" />
     <meta
       property="og:description"
-      content="Portfolio de Bruno Quiroga: Data Analyst, Full Stack Developer, estudiante de Ingeniería en Sistemas."
+      content="Software Engineer & Data Analyst."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://bruquiro.github.io/" />
     <meta property="og:image" content="favicon.ico" />
-    <!-- Favicons y manifest para compatibilidad total -->
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -30,257 +42,218 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
-    <canvas id="matrix"></canvas>
-
-    <!-- Botón de modo claro/oscuro fuera del nav, solo visible en móvil -->
+    <!-- Theme Toggle -->
     <button
-      id="toggle-theme-mobile"
-      aria-label="Toggle dark/light mode"
-      style="display: none"
+      id="toggle-theme"
+      aria-label="Switch to light mode"
+      class="theme-toggle"
     >
-      🌙
-    </button>
-    <!-- Botón hamburguesa fuera del nav, solo visible en móvil -->
-    <button
-      id="menu-toggle"
-      aria-label="Open menu"
-      class="menu-toggle"
-      style="left: 16px; right: auto"
-    >
-      ☰
+      <span class="material-symbols-outlined">light_mode</span>
     </button>
 
-    <nav>
-      <ul id="nav-list">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#work">Work Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#languages">Languages</a></li>
-        <li><a href="#tech-stack-badges">Stack</a></li>
-        <li>
-          <button id="toggle-theme" aria-label="Toggle dark/light mode">
-            🌙
-          </button>
-        </li>
-      </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="/" class="logo">bruquiro</a>
+        <div class="nav-links">
+          <a href="#profile">Profile</a>
+          <a href="#tech">Tech Stack</a>
+          <a href="#contact">Contact</a>
+          <a href="cv/" class="btn-resume">Resume</a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
     </nav>
 
-    <div class="content">
-      <h1 id="top"><a href="https://bruquiro.github.io/">Bruno Quiroga</a></h1>
-      <p>
-        <strong>Data Analyst</strong> | <strong>Full Stack Developer</strong> |
-        <strong>Systems Engineering Student</strong>
-      </p>
-      <p>
-        📍 Rosario, Argentina<br />
-        📧 <a href="mailto:brunomquiroga0@gmail.com">brunomquiroga0@gmail.com</a
-        ><br />
-        🔗
-        <a href="https://linkedin.com/in/brunomaximilianoquiroga">LinkedIn</a>
-      </p>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">System Status: Optimal</span>
+          </div>
+          
+          <h1>
+            Software Engineer<br />
+            <span class="highlight">| Data Analyst</span>
+          </h1>
+          
+          <p class="hero-label">Software Engineer | Data Analyst | Automation</p>
+          
+          <p class="hero-intro">
+            Systems Engineering student focused on building scalable solutions 
+            by combining full-stack development with custom infrastructure expertise.
+          </p>
+          
+          <div class="hero-cta">
+            <a href="#tech" class="btn-primary">
+              Explore My Work
+              <span class="material-symbols-outlined arrow">arrow_forward</span>
+            </a>
+            <a href="#contact" class="btn-secondary">Get in touch</a>
+          </div>
+        </div>
+        
+        <div class="hero-decoration">
+          <span class="material-symbols-outlined">developer_board</span>
+        </div>
+      </section>
 
-      <hr />
+      <!-- Bio Section -->
+      <section class="bio" id="profile">
+        <div class="bio-container">
+          <div class="bio-content">
+            <p class="section-label">Professional Profile</p>
+            <h2>
+              Passionate about building robust applications and turning complex 
+              data into actionable insights.
+            </h2>
+            <p class="bio-text">
+              I specialize in backend development, data engineering, and automating 
+              workflows. With experience across freelance projects and enterprise 
+              environments, I deliver scalable solutions that bridge the gap 
+              between technical complexity and business value.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <h2 id="about">About Me</h2>
-      <p>
-        I’m passionate about technology and solving real-world problems through
-        data and software. Currently working on data analysis and application
-        management, while pursuing a Systems Engineering degree at UTN (FRRo). I
-        enjoy learning new tools, collaborating in teams, and delivering
-        impactful solutions.
-      </p>
+      <!-- Tech Stack Section -->
+      <section class="tech-stack" id="tech">
+        <div class="tech-container">
+          <div class="tech-header">
+            <div>
+              <p class="section-label">The Monolithic Stack</p>
+              <h2>Core Infrastructure & Development</h2>
+            </div>
+            <p class="tech-desc">
+              Architecting scalable solutions with a focus on high-performance 
+              data pipelines and containerized deployment.
+            </p>
+          </div>
+          
+          <div class="tech-grid">
+            <!-- Card 1: Software Development -->
+            <div class="tech-card">
+              <span class="material-symbols-outlined icon">terminal</span>
+              <h3>Software Development</h3>
+              <p>
+                Full Stack core with proficiency in Python, JavaScript and TypeScript. 
+                Experience with frameworks like React, Django and NodeJS.
+              </p>
+              <div class="tech-tags">
+                <span>Python</span>
+                <span>React</span>
+                <span>NodeJS</span>
+              </div>
+            </div>
+            
+            <!-- Card 2: Data Engineering -->
+            <div class="tech-card">
+              <span class="material-symbols-outlined icon">insights</span>
+              <h3>Data Engineering</h3>
+              <p>
+                Large dataset analysis and loading. Specialist in SQL, PowerBI 
+                and scientific libraries (Pandas, NumPy).
+              </p>
+              <div class="tech-tags">
+                <span>Pandas</span>
+                <span>SQL</span>
+                <span>PowerBI</span>
+              </div>
+            </div>
+            
+            <!-- Card 3: Infrastructure -->
+            <div class="tech-card">
+              <span class="material-symbols-outlined icon">dns</span>
+              <h3>Infrastructure</h3>
+              <p>
+                Environment management with Docker and Linux. Hands-on experience with 
+                Debian and Arch Linux servers.
+              </p>
+              <div class="tech-tags">
+                <span>Docker</span>
+                <span>Linux</span>
+                <span>Debian</span>
+              </div>
+            </div>
+            
+            <!-- Card 4: Automation -->
+            <div class="tech-card">
+              <span class="material-symbols-outlined icon">settings</span>
+              <h3>Automation</h3>
+              <p>
+                Workflow optimization through custom scripts, APIs and 
+                Google Apps Script automations.
+              </p>
+              <div class="tech-tags">
+                <span>GAS</span>
+                <span>REST API</span>
+                <span>Python Scripts</span>
+              </div>
+            </div>
+            
+            <!-- Card 5: Databases -->
+            <div class="tech-card">
+              <span class="material-symbols-outlined icon">database</span>
+              <h3>Databases</h3>
+              <p>
+                Design and management of relational and NoSQL databases 
+                (PostgreSQL, MySQL, MongoDB).
+              </p>
+              <div class="tech-tags">
+                <span>PostgreSQL</span>
+                <span>MongoDB</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+            
+            <!-- Card 6: Tools & Workflow -->
+            <div class="tech-card">
+              <span class="material-symbols-outlined icon">account_tree</span>
+              <h3>Tools & Workflow</h3>
+              <p>
+                Professional workflow on macOS/Linux using Git/GitHub 
+                and agile methodologies.
+              </p>
+              <div class="tech-tags">
+                <span>Git</span>
+                <span>Agile</span>
+                <span>macOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-      <h2 id="work">Work Experience</h2>
-
-      <h3>The Black Signature</h3>
-      <p><strong>Data Analyst</strong> | <em>Apr 2023 – Present</em></p>
-      <ul>
-        <li>Load and analyze large datasets.</li>
-        <li>Optimize internal workflows.</li>
-        <li>
-          Interface with clients and suppliers to refine processes and
-          reporting.
-        </li>
-        <li>
-          Coordinate communication and logistics with warehouses and shipments.
-        </li>
-      </ul>
-
-      <h3>Malevo App</h3>
-      <p><strong>Systems & IT</strong> | <em>Aug 2024 – Oct 2025</em></p>
-      <ul>
-        <li>Manage and test app releases and features.</li>
-        <li>
-          Translate specialized staff requirements into actionable tasks for
-          developers.
-        </li>
-        <li>Prioritize work based on business needs and impact.</li>
-        <li>Bridge communication between technical and non-technical teams.</li>
-      </ul>
-
-      <h3>Web Developer Freelancer</h3>
-      <p><strong>Full Stack Developer</strong> | <em>2020 – 2022</em></p>
-      <ul>
-        <li>
-          Developed and maintained websites and web apps for various clients.
-        </li>
-        <li>
-          Worked with JavaScript, HTML, CSS, AngularJS, Django, NodeJS,
-          TypeScript, MongoDB, MySQL, and WordPress.
-        </li>
-        <li>Designed responsive interfaces and implemented custom features.</li>
-        <li>Integrated databases and third-party services.</li>
-        <li>
-          Delivered projects using agile methodologies and direct client
-          communication.
-        </li>
-      </ul>
-
-      <h3>Musife Espectáculos SRL</h3>
-      <p>
-        <strong>Accounting Assistant</strong> | <em>Apr 2019 – Mar 2020</em>
-      </p>
-      <ul>
-        <li>Upload and process invoices.</li>
-        <li>Improve administrative workflows.</li>
-        <li>Event contracting agency.</li>
-      </ul>
-
-      <h2 id="projects">Projects</h2>
-      <p>
-        <strong
-          >Various Internal Projects – The Black Signature
-          (2023–Present)</strong
-        ><br />
-        Participated in the development and improvement of multiple internal
-        tools and web applications for business operations, analytics, and
-        automation. Used technologies such as Python, JavaScript, SQL, Django,
-        NodeJS, and PowerBI. Projects focused on optimizing workflows,
-        reporting, and data management for different teams.
-      </p>
-      <p>
-        <strong>Python Project – ITBA (2020)</strong><br />
-        Comparative financial analysis of different companies using:<br />
-        Python (Pandas, NumPy, Matplotlib, Seaborn), SQL, Excel, PowerBI.
-      </p>
-
-      <h2 id="education">Education</h2>
-      <ul>
-        <li>
-          <strong>Systems Engineering</strong> – UTN FRRo (2021 – Present)
-        </li>
-        <li>
-          <strong>Electronics Technician</strong> – E.E.S.T. Nº 6, Siderurgia
-          Argentina (2013 – 2018)
-        </li>
-      </ul>
-
-      <h2 id="skills">Skills</h2>
-      <p>
-        <strong>Languages & Frameworks:</strong><br />
-        Python, SQL, Java, JavaScript, HTML, CSS, React, AngularJS, Django,
-        Flask, NodeJS, ExpressJS, TypeScript, Ruby, MySQL, MongoDB, WordPress
-      </p>
-
-      <p>
-        <strong>Tools & Platforms:</strong><br />
-        Git/GitHub, Docker, Linux, Excel, PowerBI
-      </p>
-
-      <h2 id="languages">Languages</h2>
-      <ul>
-        <li>Spanish (Native)</li>
-        <li>English (Professional Working Proficiency)</li>
-      </ul>
-
-      <h2 id="tech-stack-badges">Tech Stack Badges</h2>
-      <p>
-        <img
-          src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"
-          alt="Linux"
-        />
-        <img
-          src="https://img.shields.io/badge/archlinux-1793D1?style=flat-square&logo=arch-linux&logoColor=white"
-          alt="Arch Linux"
-        />
-        <img
-          src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54"
-          alt="Python"
-        />
-        <img
-          src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"
-          alt="NumPy"
-        />
-        <img
-          src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"
-          alt="Pandas"
-        />
-        <img
-          src="https://img.shields.io/badge/Matplotlib-003DA5?style=flat-square&logo=matplotlib&logoColor=white"
-          alt="Matplotlib"
-        />
-        <img
-          src="https://img.shields.io/badge/Seaborn-000000?style=flat-square&logo=seaborn&logoColor=white"
-          alt="Seaborn"
-        />
-        <img
-          src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"
-          alt="Django"
-        />
-        <img
-          src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"
-          alt="Flask"
-        />
-        <img
-          src="https://img.shields.io/badge/SQL-000?style=flat-square&logo=mysql&logoColor=white"
-          alt="SQL"
-        />
-        <img
-          src="https://img.shields.io/badge/Sequelize-52B0E7?style=flat-square&logo=sequelize&logoColor=white"
-          alt="Sequelize"
-        />
-        <img
-          src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"
-          alt="NodeJS"
-        />
-        <img
-          src="https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white"
-          alt="ExpressJS"
-        />
-        <img
-          src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white"
-          alt="Java"
-        />
-        <img
-          src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"
-          alt="React"
-        />
-        <img
-          src="https://img.shields.io/badge/AngularJS-E23237?style=flat-square&logo=angularjs&logoColor=white"
-          alt="AngularJS"
-        />
-        <img
-          src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
-          alt="Git"
-        />
-        <img
-          src="https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white"
-          alt="WordPress"
-        />
-        <img
-          src="https://img.shields.io/badge/PowerBI-F2C811?style=flat-square&logo=powerbi&logoColor=black"
-          alt="PowerBI"
-        />
-        <img
-          src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white"
-          alt="Excel"
-        />
-      </p>
-    </div>
-
-    <div id="back-to-top">↑ Top</div>
+    <!-- Footer (includes contact) -->
+    <footer id="contact">
+      <div class="footer-content">
+        <div class="footer-logo">BRUQUIRO</div>
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/brunomaximilianoquiroga" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined">link</span>
+            LinkedIn
+          </a>
+          <a href="https://github.com/bruquiro" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined">code</span>
+            GitHub
+          </a>
+          <a href="mailto:brunomquiroga0@gmail.com">
+            <span class="material-symbols-outlined">mail</span>
+            Email
+          </a>
+        </div>
+        <div class="footer-copyright">
+          © 2026 BRUQUIRO. ENGINEERED IN ROSARIO, ARGENTINA
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>

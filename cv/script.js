@@ -2,8 +2,6 @@ const elements = {
   body: document.body,
   themeBtn: document.getElementById('toggle-theme'),
   themeBtnIcon: document.querySelector('#toggle-theme .material-symbols-outlined'),
-  mobileMenuToggle: document.querySelector('.mobile-menu-toggle'),
-  navLinks: document.querySelector('.nav-links'),
 };
 
 const isLightMode = () => elements.body?.classList.contains('light-mode');
@@ -33,36 +31,7 @@ function initTheme() {
   setInitialTheme();
 }
 
-function initMobileMenu() {
-  if (elements.mobileMenuToggle && elements.navLinks) {
-    elements.mobileMenuToggle.addEventListener('click', () => {
-      const isOpen = elements.navLinks.classList.toggle('mobile-open');
-      elements.mobileMenuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
-    });
-  }
-}
-
-function initSmoothScroll() {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const href = this.getAttribute('href');
-      if (href === '#') return;
-      
-      e.preventDefault();
-      const target = document.querySelector(href);
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  });
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   if (!elements.body) return;
   initTheme();
-  initMobileMenu();
-  initSmoothScroll();
 });
