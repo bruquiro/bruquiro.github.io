@@ -765,6 +765,10 @@ footer {
     padding: 1rem;
   }
   
+  .logo {
+    padding-left: 3.5rem;
+  }
+  
   .hero {
     padding: 6rem 1rem 3rem;
   }
