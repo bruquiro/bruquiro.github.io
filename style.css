@@ -274,6 +274,41 @@ body.light-mode .navbar {
   color: var(--color-primary);
   cursor: pointer;
   padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* Mobile: show hamburger + move resume button next to it */
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  /* When mobile menu is open, show all links including resume */
+  .nav-links.mobile-open {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-bg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 99;
+    padding-top: 60px;
+  }
+  
+  .nav-links.mobile-open a {
+    font-size: 1.5rem;
+  }
 }
 
 /* Hero Section */
@@ -714,14 +749,6 @@ footer {
   
   .theme-toggle .material-symbols-outlined {
     font-size: 1.25rem;
-  }
-  
-  .nav-links {
-    display: none;
-  }
-  
-  .mobile-menu-toggle {
-    display: block;
   }
   
   .nav-container {
