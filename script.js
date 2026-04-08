@@ -34,10 +34,25 @@ function initTheme() {
 }
 
 function initMobileMenu() {
+  const menuIcon = elements.mobileMenuToggle?.querySelector('.material-symbols-outlined');
+  
   if (elements.mobileMenuToggle && elements.navLinks) {
     elements.mobileMenuToggle.addEventListener('click', () => {
       const isOpen = elements.navLinks.classList.toggle('mobile-open');
       elements.mobileMenuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      if (menuIcon) {
+        menuIcon.textContent = isOpen ? 'close' : 'menu';
+      }
+    });
+    
+    // Close menu when clicking on a link
+    elements.navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        elements.navLinks.classList.remove('mobile-open');
+        if (menuIcon) {
+          menuIcon.textContent = 'menu';
+        }
+      });
     });
   }
 }
